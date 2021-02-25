@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
-using Entities.Abstract;
-using Entities.Concrete;
+using Core.Entities;
 
-namespace DataAccess.Abstract
+
+namespace Core.DataAccess
 {
     public interface IEntityRepository<T> where  T: class,IEntity,new()//Burada T Generic tipine sen bir referans tipsin, bir IEntitysin ya da onu
                                                                        //iplemente edebilirsin ve nihayetinde sen constuctorın newlenebilsin yani sen asdece db nesneleri ile çalış dedik
